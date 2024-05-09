@@ -47,7 +47,7 @@ def to_excel(df):
 def main():
     # Configuração inicial da página da aplicação
     st.set_page_config(page_title = 'Telemarketing analisys', \
-        page_icon = '../img/telmarketing_icon.png',
+        page_icon = '../telmarketing_icon.png',
         layout="wide",
         initial_sidebar_state='expanded'
     )
@@ -57,7 +57,7 @@ def main():
     st.markdown("---")
     
     # Apresenta a imagem na barra lateral da aplicação
-    image = Image.open("../img/Bank-Branding.jpg")
+    image = Image.open("../Bank-Branding.jpg")
     st.sidebar.image(image)
 
     # Botão para carregar arquivo na aplicação
