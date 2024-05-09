@@ -11,6 +11,8 @@ from io                  import BytesIO
 custom_params = {"axes.spines.right": False, "axes.spines.top": False}
 sns.set_theme(style="ticks", rc=custom_params)
 
+# desabilitar erro sobre descontinuidade da biblioteca
+st.set_option('deprecation.showPyplotGlobalUse', False)
 
 # Função para ler os dados
 @st.cache(show_spinner= True, allow_output_mutation=True)
