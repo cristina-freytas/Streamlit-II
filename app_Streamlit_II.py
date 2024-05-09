@@ -57,8 +57,8 @@ def main():
     st.markdown("---")
     
     # Apresenta a imagem na barra lateral da aplicação
-    image = Image.open("../Bank-Branding.jpg")
-    st.sidebar.image(image)
+    image = Image.open("Bank-Branding.jpg")
+    st.image(image, caption='Bank Branding', use_column_width=True)
 
     # Botão para carregar arquivo na aplicação
     st.sidebar.write("## Suba o arquivo")
